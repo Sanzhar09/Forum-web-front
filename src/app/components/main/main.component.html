@@ -1,13 +1,7 @@
 <div *ngFor="let article of articles">
     <div>
-        <h1>
+        <h1 (click)="redirectToArticle(article.id)">
             {{article.name}}
-        </h1>
-
-        {{article.author}}
-
-        <h2>
-            {{article.text}}
-        </h2>
+        </h1> <hr>
     </div>
 </div>
