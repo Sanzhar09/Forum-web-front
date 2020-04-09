@@ -1,0 +1,13 @@
+
+<br>
+Регистрация
+
+<br>
+<br>
+
+<input type="name" placeholder="Введите имя" name="name" [(ngModel)]="user.name">
+<input type="email" placeholder="Введите email" name="email" [(ngModel)]="user.email">
+<input type="password" placeholder="Введите пароль" name="password" [(ngModel)]="user.password">
+
+<br>
+<button (click)="onSubmit()">Зарегистрироваться</button>
