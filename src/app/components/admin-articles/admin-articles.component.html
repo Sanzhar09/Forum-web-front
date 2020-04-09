@@ -1,0 +1,10 @@
+<br><br><br>
+<a href="admin">Назад</a>
+<br>
+Список статей:
+<div *ngFor="let article of articles">
+    <div>
+        {{article.name}}
+        <button (click)="onDelete(article.id)">x</button>
+    </div>
+</div>

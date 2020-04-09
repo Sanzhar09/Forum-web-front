@@ -16,5 +16,7 @@ export class ArticleService {
     return this.http.get<Article[]>(this._url)
   }
 
-  
+  delete(id: Number): Observable<Article> {
+    return this.http.delete<Article>(this._url+id)
+  }
 }
